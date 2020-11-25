@@ -6,7 +6,7 @@ import android.widget.Toast;
 public class todo {
     private String todo;
     private String description;
-    private boolean isChecked = false;
+    public static boolean isChecked = false;
     public todo(String todo, String description){
         this.todo = todo;
         this.description = description;
@@ -22,7 +22,7 @@ public class todo {
         return isChecked;
     }
 
-    public void setDone(Boolean checked){
+    public static void setDone(Boolean checked){
         isChecked = checked;
     }
 }

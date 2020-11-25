@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class Activity2 extends AppCompatActivity {
@@ -29,6 +28,7 @@ public class Activity2 extends AppCompatActivity {
         todo = (TextView)findViewById(R.id.innerTodo);
         desc = (TextView)findViewById(R.id.innerDesc);
         todoState = (CheckBox)findViewById(R.id.checkBox);
+
 
         todo.setText(homeIntent.getStringExtra(myOwnAdapter.TODO));
         desc.setText(homeIntent.getStringExtra(myOwnAdapter.DESC));
