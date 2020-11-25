@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Todo</string>
+
+    <string-array name="todos">
+        <item>Buy Milk</item>
+        <item>Sleep Well</item>
+        <item>Study CS426</item>
+        <item>Try not to die while doing the Task</item>
+        <item>Buy Chocolate</item>
+        <item>Cry</item>
+        <item>Drink Coffee</item>
+        <item>Cry Again</item>
+        <item>Buy Milk</item>
+        <item>Sleep Well</item>
+        <item>Study CS426</item>
+        <item>Try not to die while doing the Task</item>
+        <item>Buy Chocolate</item>
+        <item>Cry</item>
+
+
+    </string-array>
+    <string-array name="description">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+
+
+    </string-array>
+</resources>
