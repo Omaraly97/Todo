@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Activity2 extends AppCompatActivity {
@@ -40,11 +43,28 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+
             }
         });
 
     }
 
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        finish();
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return true;
+    }
 }
 
 

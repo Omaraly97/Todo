@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -42,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             todoList.add(new todo (s1[i], s2[i]));
         }
     }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("main", "onResume: ");
+    }
+
 
     public void buildRecycleViewList (){
         createArrayList();

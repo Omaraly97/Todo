@@ -1,9 +1,7 @@
 package com.example.todo;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,6 +78,8 @@ public class myOwnAdapter extends RecyclerView.Adapter<myOwnAdapter.myOwnHolder>
                 } else {
                     currentTodo.setDone(false);
                 }
+
+                Log.d("state of item"+ position,isChecked?"checked":"no checked");
             }
         });
     }
@@ -124,7 +124,7 @@ public class myOwnAdapter extends RecyclerView.Adapter<myOwnAdapter.myOwnHolder>
                         if (position != RecyclerView.NO_POSITION) {
                             listener2.onItemLongClicked(position);
                         }
-                        }
+                    }
                     return false;
                 }
             });
